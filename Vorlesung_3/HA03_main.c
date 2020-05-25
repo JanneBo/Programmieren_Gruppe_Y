@@ -5,13 +5,8 @@
 /*******************************************************
 * NAME: HA03_main.c (main) 
 *
-* AUTHOR: Weinreich Juliane und Bosch Janne (in cooperation with: jannik wiessler)
-*											
-									kleines Feedback:
-									diesmal wars perfekt von der Zeit, wir saßen etwa 1,5h Stunden dran,
-									man hat alles gut verstanden, man musste aber trotzdem noch das ein oder andere herausfinden oder im Internet recherchieren, was ja auch so sein soll.
-									Die grobe Struktur, die du uns schon mal vorgegeben hast hat sehr geholfen!
-
+* AUTHOR: Reichwein Julian und Bosch Janne (in cooperation with: jannik wiessler)
+*										
 * DATE: 2020-05-24
 *
 * DESCRIPTION:  Implementation of a simple linked list programm. 
