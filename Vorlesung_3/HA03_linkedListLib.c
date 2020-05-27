@@ -140,7 +140,7 @@ void saveList(listElement *start){
             Don't forget to close the file stream!
 */
     printf("\n\nif you wonna know wether it was successful, then open se liste\n");
-    delay(2000);
+    delay(2000); // JW 2020-05-27: nice idea ! +1Pkt :-)
     printf("just kiddin'  \n");
     if(currElem->nextElem == NULL){
           printf("saved succesfully\n\n");
@@ -198,9 +198,10 @@ void loadList(listElement *start){
           int i = 0;
           listElement *currElem = start;
           do{
+            printf("i = %d\n",i);
             currElem = currElem->nextElem;
             fscanf(fPtr, "%d.)",&i); i++;
-            fscanf(fPtr, "\tlast Name: %s\n",currElem->lastName);
+            fscanf(fPtr, "\tlast Name: %s\n",currElem->lastName); // this 
             fscanf(fPtr, "\tfirst Name: %s\n",currElem->firstName);
             fscanf(fPtr, "\tage : %d\n",&currElem->age);
           }while (currElem->nextElem != NULL);
@@ -233,6 +234,13 @@ void stringToLower(char *string) {
     printf("\n>>stringToLower fcn is tbd.\n\n");
 
 }
+/*
+JW-2020-05-27:
+--------------
+> well done (8/10) 
+> Segmentation fault: 11 on loading list. think this is a format problem. please show homework in class. : -3Pkt
+> added delay: +1Pkt
+*/
 
 
 
